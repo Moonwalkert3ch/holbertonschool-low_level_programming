@@ -6,15 +6,15 @@
 #include <stdio.h>
 
 /*
- * Main- Prints all single digits to 10.
- * RETURN 0 always success.
+ * Main- Entry point
+ * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	char i;
+	int i;
 
-	for (i = '0'; i <= 10; i++)
+	for (i = '0'; i <= 9; i++)
 	putchar(i);
 	putchar('\n');
 
