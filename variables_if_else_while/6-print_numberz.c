@@ -1,11 +1,12 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /*
  * File: 5-print_numberz.c
  * author: Rachael Bradford
 */
 
-#include <stdio.h>
-
-/*
+/**
  * Main- Entry point
  * Return: Always 0 (success)
 */
