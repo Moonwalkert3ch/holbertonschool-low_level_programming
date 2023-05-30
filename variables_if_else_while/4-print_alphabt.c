@@ -1,24 +1,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* File: 4-print_alphabt.c author: Rachael Bradford */
+/* Author: Rachael Bradford File: 4-print.alphabt.c */
 
 /**
- *  Main - Prints alphabets in lowercase except q and e.
+ * Main - Prints alphabet in lowercase
  *
- * Return: always 0 SUCCESS
+ * Return: Always 0 success
 */
 int main(void)
 {
-char i, e, q;
-
-e = 'e';
-q = 'q';
-	
-for (i = 'a'; i <= 'z'; i++)
+char l = 'a';
+while (l <= 'z')
 {
-if (i != e && i != q)
-putchar(i);
+if (l != 'q' && l != 'e')
+putchar(l);
+l++;
 }
 putchar('\n');
 return (0);
