@@ -4,7 +4,8 @@
 /* File: 5-print_numberz.c Author: Rachael Bradford */
 
 /**
- * Main- Entry point
+ * Main- Prints all single digit numbers in base 16.
+ *
  * Return: Always 0 (success)
 */
 int main(void)
