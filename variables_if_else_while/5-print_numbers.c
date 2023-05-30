@@ -3,18 +3,18 @@
 #include <stdio.h>
 /* File: 5-print_numbers.c  author: Rachael Bradford*/
 
-/** Main -Prints all single digit numbers of bsae 10.
+/**
+ * Main -Prints all single digit numbers of bsae 10.
  *
- * RETURN -  ALWAYS 0 SUCCESS
+ * RETURN: ALWAYS 0 SUCCESS
 */
-
 int main(void)
 {
-	int i;
+int i;
 
-	for (i = 0; i < 10; i++)
-	printf("%d", i);
-	printf("\n");
+for (i = 0; i < 10; i++)
+printf("%d", i);
+printf("\n");
 
-	return (0);
+return (0);
 }
