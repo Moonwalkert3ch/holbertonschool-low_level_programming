@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * File: 5-print_numberz.c Author: Rachael Bradford */
+/* File: 5-print_numberz.c Author: Rachael Bradford */
 
 /**
  * Main- Entry point
