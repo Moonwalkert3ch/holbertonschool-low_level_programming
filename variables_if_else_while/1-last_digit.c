@@ -4,7 +4,7 @@
 /* Author: Rachael Bradford file: 1-last_digit.c */
 
 /**
- * Main- Prints last digits of a number
+ * main - Prints last digits of a number
  * Return: always 0 success
 */
 int main(void)
