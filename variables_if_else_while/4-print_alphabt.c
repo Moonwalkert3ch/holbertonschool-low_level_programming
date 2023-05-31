@@ -4,8 +4,8 @@
 /* Author: Rachael Bradford File: 4-print.alphabt.c */
 
 /**
- * Main - Prints alphabet in lowercase
- *
+ * main - Prints alphabet in lowercase
+ *description: except q and e
  * Return: Always 0 success
 */
 int main(void)
