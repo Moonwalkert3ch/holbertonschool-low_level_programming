@@ -4,9 +4,9 @@
 /* File: 5-print_numbers.c  author: Rachael Bradford*/
 
 /**
- * Main -Prints all single digit numbers of bsae 10.
- *
- * RETURN: ALWAYS 0 SUCCESS
+ * main - Prints all single digit numbers of bsae 10.
+ * description: new line
+ * Return: ALWAYS 0 SUCCESS
 */
 int main(void)
 {
