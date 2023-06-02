@@ -6,16 +6,21 @@
 */
 void times_tables(void)
 {
-int digit, mult, result;
-for (digit = 0; digit <= 9; digit++)
+int num, mult, result;
+
+for (num = 0; num <= 9; num++)
 {
+
 _putchar('0');
 
 for (mult = 1; mult <= 9; mult++)
 {
+
 _putchar(',');
 _putchar(' ');
-result = digit * mult;
+
+result = num * mult;
+
 if (result <= 9)
 _putchar(' ');
 else
