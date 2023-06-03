@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers from 0 to 9.
- * @numbers: integer to be determined.
+ * print_numbers - prints the numbers from 0 to 9, followed by a new line.
+ * @number: integer to be determined.
  * Return: mothing.
 */
 void print_numbers(void)
