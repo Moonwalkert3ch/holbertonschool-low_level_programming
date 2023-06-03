@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _numbers - prints numbers from 0 to 9.
+ * @numbers: integer to be determined.
+ * Return: result.
 */
-int main(void)
+void print_numbers(void)
 {
-	print_numbers();
-	return (0);
+	int number = 0;
+
+	for (number = 0; number < 10; number++)
+		_putchar(number);
+	_putchar('\n');
 }
