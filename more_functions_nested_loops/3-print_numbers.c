@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - prints the numbers from 0 to 9, followed by a new line.
- * @number: integer to be determined.
  * Return: mothing.
 */
 void print_numbers(void)
