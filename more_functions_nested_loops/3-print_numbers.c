@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _numbers - prints numbers from 0 to 9.
+ * print_numbers - prints numbers from 0 to 9.
  * @numbers: integer to be determined.
- * Return: result.
+ * Return: mothing.
 */
 void print_numbers(void)
 {
-	int number = 0;
-
-	for (number = 0; number < 10; number++)
-		_putchar(number);
-	_putchar('\n');
+	int number = 48;
+	for (number = 48; number < 58; number++)
+	{
+	_putchar(number);
+	}
+	_putchar(10);
 }
