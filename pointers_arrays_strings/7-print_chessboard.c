@@ -8,15 +8,13 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
-	int aLen = sizeof(*a) / sizeof(*a[0]);
-
-	for (i = 0; i < aLen; i++)
+	int i;
+	int j;
+	
+	for (i = 0; i < 8; i++)
 	{
-		for (j = 0; j < aLen; j++)
-		{
+		for (j = 0; j < 8; i++)
 			_putchar(a[i][j]);
-		}
 		_putchar('\n');
 	}
 }
