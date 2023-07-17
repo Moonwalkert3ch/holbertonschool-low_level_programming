@@ -1,4 +1,2 @@
-*.out
-*.exe
-*.o
+*swp
 *-main.c
