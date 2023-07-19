@@ -10,7 +10,7 @@
  * */
 int main(void)
 {
-	listint_t *head;
+	dlistint_t *head;
 
 	head = NULL;
 	add_dnodeint_end(&head, 0);
