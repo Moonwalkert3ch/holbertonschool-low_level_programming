@@ -8,19 +8,16 @@
  * @array: The array to print
  * @size: number of elements in array
 */
-unsigned long int print_array(const int *array, size_t size)
+void print_array(const int *array, size_t left, size_t right)
 {
 size_t n;
 
-n = 0;
-while (array && n < size)
+for (n = left; n <= right; ++n)
 {
-if (n > 0)
+if (n > left)
 	printf(", ");
 printf("%d", array[n]);
-++n;
 }
-return (0);
 }
 
 /**
@@ -50,8 +47,9 @@ middle = left + (right - left) / 2;
 
 for (n = left; n <= right; ++n)
 {
-	print_array(array, size);
-	printf("Searching in array: %d\n", array[n]);
+	printf("Searching in array: ");
+	print_array(array, left, right);
+	printf("\n");
 	break;
 }
 if (array[middle] == value)
