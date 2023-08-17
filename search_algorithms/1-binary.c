@@ -4,6 +4,26 @@
 #include <stdlib.h>
 
 /**
+ * print_array - prints an array of integers
+ * @array: The array to print
+ * @size: number of elements in array
+*/
+unsigned long int print_array(const int *array, size_t size)
+{
+size_t n;
+
+n = 0;
+while (array && n < size)
+{
+if (n > 0)
+	printf(", ");
+printf("%d", array[n]);
+++n;
+}
+return (0);
+}
+
+/**
  * binary_search - function that uses binary search algorithms
  * @array: points to first element in the array
  * @size: number of elements in array
@@ -30,10 +50,8 @@ middle = left + (right - left) / 2;
 
 for (n = left; n <= right; ++n)
 {
-printf("Searching in array: %d\t", array[n]);
-printf("\n");
-++n;
-break;
+	printf("Searching in array: %d%ld\n", array[n], (print_array(array, size)));
+	break;
 }
 if (array[middle] == value)
 {
