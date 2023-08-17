@@ -6,7 +6,8 @@
 /**
  * print_array - prints an array of integers
  * @array: The array to print
- * @size: number of elements in array
+ * @left: left of elements in array
+ * @right: right of elements in array
 */
 void print_array(const int *array, size_t left, size_t right)
 {
