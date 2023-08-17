@@ -12,16 +12,15 @@
  * Return: index where value is found
 */
 
-int binary_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value, long unsigned int left, long unsigned int right)
 {
 if (array == NULL)
 {
 return (-1);
 }
 
-int left = 0;
-int right = (int)size - 1;
-size_t n;
+right = size - 1;
+long unsigned int n;
 
 while (left <= right)
 {
@@ -29,7 +28,7 @@ while (left <= right)
 
 	printf("Searching in array: ");
 
-for (n = (size_t)left; n <= (size_t)right; n++)
+for (n = left; n <= right; n++)
 {
 printf("%d\n", array[n]);
 }
