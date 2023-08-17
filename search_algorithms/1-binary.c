@@ -50,7 +50,8 @@ middle = left + (right - left) / 2;
 
 for (n = left; n <= right; ++n)
 {
-	printf("Searching in array: %d%ld\n", array[n], (print_array(array, size)));
+	print_array(array, size);
+	printf("Searching in array: %d\n", array[n]);
 	break;
 }
 if (array[middle] == value)
