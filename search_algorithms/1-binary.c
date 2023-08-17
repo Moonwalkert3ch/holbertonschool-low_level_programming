@@ -26,15 +26,25 @@ return (-1);
 
 while (left <= right)
 {
-	middle = left + (right - left) / 2;
+middle = left + (right - left) / 2;
 
-	for (n = left; n <= right; n++)
+for (n = left; n <= right; n++)
 {
 printf("Searching in array: %d\n", array[n]);
 }
 if (array[middle] == value)
 {
+if ((middle == 0 || array[middle - 1] != value)
+	       && (middle == size -1 || array[middle + 1] != value))
 return (middle);
+}
+else if (middle == 0 || array[middle - 1] != value)
+{
+left = middle + 1;
+}
+else
+{
+right = middle - 1;
 }
 else if (array[middle] < value)
 {
