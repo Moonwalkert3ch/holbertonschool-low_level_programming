@@ -28,31 +28,26 @@ while (left <= right)
 {
 middle = left + (right - left) / 2;
 
-for (n = left; n <= right; n++)
+for (n = left; n <= right; ++n)
 {
-printf("Searching in array: %d\n", array[n]);
+printf("Searching in array: %d\t", array[n]);
+printf("\n");
+++n;
+break;
 }
 if (array[middle] == value)
 {
-if ((middle == 0 || array[middle - 1] != value)
-	       && (middle == size - 1 || array[middle + 1] != value))
 return (middle);
-}
-else if (middle == 0 || array[middle - 1] != value)
-{
-left = middle + 1;
-}
-else
-{
-right = middle - 1;
 }
 if (array[middle] < value)
 {
 left = middle + 1;
+n++;
 }
 else
 {
 right = middle - 1;
+n++;
 }
 }
 return (-1);
